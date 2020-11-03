@@ -34,3 +34,11 @@ startBtn.addEventListener('click', startGame);
 nextBtn.addEventListener('click', () => {
     currentQuestionIndex++;
     setNextQuestion();
+    
+function resetState () {
+    clearStatusClass(document.body);
+    nextBtn.classList.add('hide');
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild(answerButtonselement.firstChild);
+    }
+}
