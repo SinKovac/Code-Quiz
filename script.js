@@ -68,11 +68,6 @@ function setStatusClass(element, correct) {
     }
 }
 
-function clearStatusClass(element) {
-    element.classList.remove('correct');
-    element.classList.remove('wrong');
-}
-
 const questions = [
     {
         question: 'Which Premier League team is known as the Red Devils?',
