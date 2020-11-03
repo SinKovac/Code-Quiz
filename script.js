@@ -34,6 +34,22 @@ startBtn.addEventListener('click', startGame);
 nextBtn.addEventListener('click', () => {
     currentQuestionIndex++;
     setNextQuestion();
+
+function selectAnswer(e) {
+    const selectButton = e.target;
+    const correct = selectedButton.dataset.correct;
+    setStatusClass(document.body, correct);
+    Array.from(answerButtonElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct);
+    })
+    if (currentQuestionIndex.length + 1) {
+        nextBtn.classList.remove('hide');
+    } else {
+        startBtn.innerText = 'Restart';
+        startBtn.classList.remove('hide');
+    }
+    
+}
     
 function resetState () {
     clearStatusClass(document.body);
