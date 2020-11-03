@@ -5,3 +5,10 @@ var startBtn = document.getElementById('start-btn');
 var nextBtn = document.getElementById('next-btn');
 var gameClock = document.getElementById('game-clock');
 
+function startGame() {
+    startBtn.classList.add('hide');
+    currentQuestionIndex = 0;
+    questionContainerElement.classList.remove('hide');
+    setNextQuestion();
+}
+
