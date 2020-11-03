@@ -11,7 +11,7 @@ As a coding boot camp student, I wanted to make a timed quiz on JavaScript funda
 
 ## Installation 
 Simply click the link below to access the page!
-https://sinkovac.github.io/Code-Refactor-Assignment/
+https://sinkovac.github.io/Code-Quiz/
 
 ## Usage
 <instructions>
