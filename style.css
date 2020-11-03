@@ -35,6 +35,12 @@ body {
     padding: 5px 10px;
     color: white;
 }
+    
+    .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .btn:hover {
     border-color: black;
