@@ -67,3 +67,37 @@ function setStatusClass(element, correct) {
         element.classList.add('wrong');
     }
 }
+
+function clearStatusClass(element) {
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
+}
+
+const questions = [
+    {
+        question: 'Which Premier League team is known as the Red Devils?',
+        answers: [
+            { text: 'Liverpool', correct: false },
+            { text: 'Manchester United', correct: true },
+            { text: 'Southhampton', correct: false },
+            { text: 'Sheffield United', correct: false }
+        ]
+    },
+    {
+        question: 'Which person was not a memeber of Van Halen?',
+        answers: [
+            { text: 'Sammy Hagar', correct: false },
+            { text: 'Lenny Van Halen', correct: true },
+            { text: 'Eddie Van Halen', correct: false },
+            { text: 'Michael Anthony', correct: false }
+        ]
+    },
+    {
+        question: 'How many kilometers from the Earth to the Moon?',
+        answers: [
+            { text: '384,400 km', correct: true },
+            { text: '332,088 km', correct: false },
+            { text: '354,400 km', correct: false },
+            { text: '403,212 km', correct: false },
+        ]
+    }
