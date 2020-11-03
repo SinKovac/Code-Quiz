@@ -12,3 +12,7 @@ function startGame() {
     setNextQuestion();
 }
 
+startBtn.addEventListener('click', startGame);
+nextBtn.addEventListener('click', () => {
+    currentQuestionIndex++;
+    setNextQuestion();
